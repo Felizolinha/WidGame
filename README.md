@@ -5,7 +5,9 @@ WidGame is an easy way to use SpriteKit for devoloping your own iOS Widgets game
 
 * Easily add a *SKScene* to your widget
  
-* Easily change your *SKScene* according to your widget view size
+* Easily change your widget view expandability status("Show More" and "Show Less") and heigth
+
+* Easily change your scene according to your widget view size
 
 # Usage
 
@@ -18,9 +20,10 @@ public class YourScene: WGScene { }
 public class TodayViewController: WGViewController { }
 ```
 
-## Easily change the size and expandability attribute of your widget in attribute inspector
+## Changing the size and expandability attribute of your widget in attribute inspector
 
 ![image](https://github.com/Felizolinha/WidGame/blob/master/ReadmeImages/image.png)
+
 
 ## Presenting your initial scene
 ```swift
@@ -29,7 +32,7 @@ public func presentInitialScene() {
 }
 ```
 
-## Easily adapt your scene to expandability of your widget view
+## Adapt your scene to expandability of your widget view
 ```swift
 func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
     //Add code for when your view change it expandability status
@@ -46,4 +49,5 @@ func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTrans
 }
 ```
 
-## See [WidGame.swift](https://github.com/Felizolinha/WidGame/blob/master/WidGame/WidGame/WidGame.swift) for more details about the implementation of this features
+
+### See [WidGame.swift](https://github.com/Felizolinha/WidGame/blob/master/WidGame/WidGame/WidGame.swift) for more details about the implementation of this features
