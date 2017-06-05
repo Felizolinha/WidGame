@@ -15,9 +15,9 @@ WidGame is an easy way to use SpriteKit for devoloping your own iOS Widgets game
 ```swift
 public class YourScene: WGScene { }
 ```
-## Inherit your TodayViewController to WGViewController
+## Inherit your Widget View Controller to WGViewController
 ```swift
-public class TodayViewController: WGViewController { }
+public class YourWidgetViewController: WGViewController { }
 ```
 
 ## Changing the size and expandability attribute of your widget in attribute inspector
