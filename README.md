@@ -20,10 +20,6 @@ public class YourScene: WGScene { }
 public class YourWidgetViewController: WGViewController { }
 ```
 
-## Changing the size and expandability attribute of your widget in attribute inspector
-
-![image](https://github.com/Felizolinha/WidGame/blob/master/ReadmeImages/image.png)
-
 
 ## Presenting your initial scene
 ```swift
