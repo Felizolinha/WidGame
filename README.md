@@ -3,11 +3,11 @@ WidGame is an easy way to use SpriteKit for devoloping your own iOS Widgets game
 
 # Features
 
-* Easily add a *SKScene* to your widget
+* Easily use *SpriteKit* on your widget
  
-* Easily change your widget view expandability status("Show More" and "Show Less") and heigth
+* Easily change your widget view expandability status("Show More" and "Show Less") and height
 
-* Easily change your scene according to your widget view size
+* Easily detect widget events from your scene
 
 # Usage
 
