@@ -1,0 +1,10 @@
+framework module WidGame {
+  umbrella header "WidGame.h"
+
+  export *
+  module * { export * }
+}
+
+module WidGame.Swift {
+    header "WidGame-Swift.h"
+}

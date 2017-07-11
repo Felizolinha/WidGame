@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NewGame
+//  Sample Code
 //
-//  Created by Matheus Felizola Freires on 03/06/17.
+//  Created by Matheus Felizola Freires on 11/07/17.
 //  Copyright © 2017 BEPiD. All rights reserved.
 //
 
