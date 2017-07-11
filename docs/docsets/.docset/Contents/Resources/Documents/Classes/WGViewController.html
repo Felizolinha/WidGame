@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WGViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/WGViewController" class="dashAnchor"></a>
+    <a title="WGViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        WGViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/WGScene.html">WGScene</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WGViewController.html">WGViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WGViewController/ExitReason.html">– ExitReason</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/WGDelegate.html">WGDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>WGViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">WGViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">NCWidgetProviding</span><span class="p">,</span> <span class="kt"><a href="../Protocols/WGDelegate.html">WGDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Your TodayViewController should inherit from WGViewController to implement WidGame&rsquo;s functionalities.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7WidGame16WGViewController8gameViewGSqCSo6SKView_"></a>
+                    <a name="//apple_ref/swift/Property/gameView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7WidGame16WGViewController8gameViewGSqCSo6SKView_">gameView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SKView that will present your WidGame scenes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">gameView</span><span class="p">:</span> <span class="kt">SKView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:OC7WidGame16WGViewController10ExitReason"></a>
+                    <a name="//apple_ref/swift/Enum/ExitReason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:OC7WidGame16WGViewController10ExitReason">ExitReason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An enum that provides the reasons which your widget might close.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+                        <a href="../Classes/WGViewController/ExitReason.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ExitReason</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP7WidGame10WGDelegate12isExpandableSb"></a>
+                    <a name="//apple_ref/swift/Property/isExpandable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP7WidGame10WGDelegate12isExpandableSb">isExpandable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">isExpandable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP7WidGame10WGDelegate9maxHeightV12CoreGraphics7CGFloat"></a>
+                    <a name="//apple_ref/swift/Property/maxHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP7WidGame10WGDelegate9maxHeightV12CoreGraphics7CGFloat">maxHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">maxHeight</span><span class="p">:</span><span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">359</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewControllerP33_411CF1D7ECD121978BB0763737E44FA319changeExpandabilityFT2toSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/changeExpandability(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewControllerP33_411CF1D7ECD121978BB0763737E44FA319changeExpandabilityFT2toSb_T_">changeExpandability(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the widget expandability.</p>
+<div class="aside aside-requires">
+    <p class="aside-title">Requires</p>
+    iOS 10.0
+
+</div>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Create a fallback to versions earlier than iOS 10.0
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">changeExpandability</span><span class="p">(</span><span class="n">to</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Bool value that tells the method if it should make the widget expandable or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController16viewDidDisappearFSbT_"></a>
+                    <a name="//apple_ref/swift/Method/viewDidDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController16viewDidDisappearFSbT_">viewDidDisappear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the view controller that its view was removed from a view hierarchy.</p>
+
+<p>You can override this method to perform additional tasks associated with dismissing or hiding the view. If you override this method, you must call super at some point in your implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If true, the disappearance of the view was animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController23didReceiveMemoryWarningFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController23didReceiveMemoryWarningFT_T_">didReceiveMemoryWarning()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sent to the view controller when the app receives a memory warning.</p>
+
+<p>Your app never calls this method directly. Instead, this method is called when the system determines that the amount of available memory is low.</p>
+
+<p>You can override this method to release any additional memory used by your view controller. If you do, your implementation of this method must call the super implementation at some point.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">didReceiveMemoryWarning</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController16widgetMightCloseFT6reasonOS0_10ExitReason_T_"></a>
+                    <a name="//apple_ref/swift/Method/widgetMightClose(reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController16widgetMightCloseFT6reasonOS0_10ExitReason_T_">widgetMightClose(reason:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the widget is in a situation that it might be closed. An exit reason is provided to the method, so your logic can react accordingly.</p>
+
+<p>This method should be used for your save logic.</p>
+
+<p>The default implementation of this method is blank.</p>
+<div class="aside aside-todo">
+    <p class="aside-title">Todo</p>
+    Find out if there are more things that might cause the widget to close.
+
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">widgetMightClose</span><span class="p">(</span><span class="nv">reason</span><span class="p">:</span> <span class="kt">WGViewController</span><span class="o">.</span><span class="kt"><a href="../Classes/WGViewController/ExitReason.html">ExitReason</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController18viewWillTransitionFT2toVSC6CGSize4withPSo37UIViewControllerTransitionCoordinator__T_"></a>
+                    <a name="//apple_ref/swift/Method/viewWillTransition(to:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController18viewWillTransitionFT2toVSC6CGSize4withPSo37UIViewControllerTransitionCoordinator__T_">viewWillTransition(to:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the container that the size of its view is about to change.</p>
+
+<p>WidGame uses this method to set some widget configurations and creating your game view. It is this method who calls the presentInitialScene() method.</p>
+
+<p>UIKit calls this method before changing the size of a presented view controller’s view. You can override this method in your own objects and use it to perform additional tasks related to the size change. For example, a container view controller might use this method to override the traits of its embedded child view controllers. Use the provided coordinator object to animate any changes you make.</p>
+
+<p>If you override this method in your custom view controllers, always call super at some point in your implementation so that UIKit can forward the size change message appropriately. View controllers forward the size change message to their views and child view controllers. Presentation controllers forward the size change to their presented view controller.</p>
+
+<ul>
+<li>size: The new size for the container’s view.</li>
+<li>coordinator: The transition coordinator object managing the size change. You can use this object to animate your changes or get information about the transition that is in progress.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">with</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt">UIViewControllerTransitionCoordinator</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController19presentInitialSceneFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/presentInitialScene()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController19presentInitialSceneFT_T_">presentInitialScene()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Override this method to show your first scene and load any saved info.</p>
+
+<p>The default implementation of this method is blank.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">presentInitialScene</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController21viewDidLayoutSubviewsFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLayoutSubviews()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController21viewDidLayoutSubviewsFT_T_">viewDidLayoutSubviews()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If you override the method below inside your TodayViewController, always call super at some point in your implementation so that WidGame can still update your gameView&rsquo;s frame and tell your game scene about these updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLayoutSubviews</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame16WGViewController32widgetActiveDisplayModeDidChangeFTOSC19NCWidgetDisplayMode15withMaximumSizeVSC6CGSize_T_"></a>
+                    <a name="//apple_ref/swift/Method/widgetActiveDisplayModeDidChange(_:withMaximumSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame16WGViewController32widgetActiveDisplayModeDidChangeFTOSC19NCWidgetDisplayMode15withMaximumSizeVSC6CGSize_T_">widgetActiveDisplayModeDidChange(_:withMaximumSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If you override the method below inside your TodayViewController, always call super at some point in your implementation so that WidGame can still delegate displayMode changes to your WGScene, and set the correct preferredContentSize to your widget.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">widgetActiveDisplayModeDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">activeDisplayMode</span><span class="p">:</span> <span class="kt">NCWidgetDisplayMode</span><span class="p">,</span> <span class="n">withMaximumSize</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://Felizolinha.github.io" target="_blank" rel="external">Matheus Felizola Freires and Luis Gustavo Avelino de Lima Jacinto</a>. All rights reserved. (Last updated: 2017-07-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
