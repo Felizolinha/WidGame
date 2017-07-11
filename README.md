@@ -45,6 +45,6 @@ func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTrans
 }
 ```
 
-### Download [this](https://github.com/Felizolinha/WidGame/tree/master/Example) project to see an example of the framework working
+### Download [this](https://github.com/Felizolinha/WidGame/tree/master/Sample%20Code) project to see an example of the framework working
 
 ### See [WidGame.swift](https://github.com/Felizolinha/WidGame/blob/master/WidGame/WidGame/WidGame.swift) for more details about the implementation of this features
