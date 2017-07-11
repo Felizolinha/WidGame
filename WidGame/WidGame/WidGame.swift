@@ -74,6 +74,14 @@ open class WGScene:SKScene {
         scaleMode = SKSceneScaleMode.resizeFill
     }
 
+    /**
+     Returns an object initialized from data in a given unarchiver.
+
+     You typically return self from init(coder:). If you have an advanced need that requires substituting a different object after decoding, you can do so in awakeAfter(using:).
+     
+     - parameter decoder: An unarchiver object.
+     - returns: self, initialized using the data in decoder.
+    */
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -92,7 +100,9 @@ open class WGViewController: UIViewController, NCWidgetProviding, WGDelegate {
      - author: Matheus Felizola Freires
      */
     public enum ExitReason {
+        ///Sent when the widget leaves the screen.
         case leftTheScreen
+        ///Sent when the widget receives a memory warning.
         case memoryWarning
     }
 
@@ -137,6 +147,7 @@ open class WGViewController: UIViewController, NCWidgetProviding, WGDelegate {
 
     /**
      Notifies the view controller that its view was removed from a view hierarchy.
+
      You can override this method to perform additional tasks associated with dismissing or hiding the view. If you override this method, you must call super at some point in your implementation.
      - parameter animated: If true, the disappearance of the view was animated.
      */
@@ -147,7 +158,9 @@ open class WGViewController: UIViewController, NCWidgetProviding, WGDelegate {
 
     /**
      Sent to the view controller when the app receives a memory warning.
+
      Your app never calls this method directly. Instead, this method is called when the system determines that the amount of available memory is low.
+
      You can override this method to release any additional memory used by your view controller. If you do, your implementation of this method must call the super implementation at some point.
      */
     open override func didReceiveMemoryWarning() {
@@ -166,6 +179,18 @@ open class WGViewController: UIViewController, NCWidgetProviding, WGDelegate {
      */
     open func widgetMightClose(reason: WGViewController.ExitReason) {}
 
+    /**
+     Notifies the container that the size of its view is about to change.
+
+     WidGame uses this method to set some widget configurations and creating your game view. It is this method who calls the presentInitialScene() method.
+
+     UIKit calls this method before changing the size of a presented view controller’s view. You can override this method in your own objects and use it to perform additional tasks related to the size change. For example, a container view controller might use this method to override the traits of its embedded child view controllers. Use the provided coordinator object to animate any changes you make.
+     
+     If you override this method in your custom view controllers, always call super at some point in your implementation so that UIKit can forward the size change message appropriately. View controllers forward the size change message to their views and child view controllers. Presentation controllers forward the size change to their presented view controller.
+     - parameters:
+     - size: The new size for the container’s view.
+     - coordinator: The transition coordinator object managing the size change. You can use this object to animate your changes or get information about the transition that is in progress.
+    */
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         if gameView == nil {

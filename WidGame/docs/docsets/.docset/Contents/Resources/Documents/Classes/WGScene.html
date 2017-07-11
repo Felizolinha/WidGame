@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WGScene Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/WGScene" class="dashAnchor"></a>
+    <a title="WGScene Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        WGScene Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/WGScene.html">WGScene</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WGViewController.html">WGViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WGViewController/ExitReason.html">– ExitReason</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/WGDelegate.html">WGDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>WGScene</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">WGScene</span><span class="p">:</span><span class="kt">SKScene</span></code></pre>
+
+                </div>
+              </div>
+            <p>All your widget game scenes should inherit from this class, instead of SKScene.</p>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Matheus Felizola Freires
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame7WGScene32widgetActiveDisplayModeDidChangeFTOSC19NCWidgetDisplayMode15withMaximumSizeVSC6CGSize_T_"></a>
+                    <a name="//apple_ref/swift/Method/widgetActiveDisplayModeDidChange(_:withMaximumSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame7WGScene32widgetActiveDisplayModeDidChangeFTOSC19NCWidgetDisplayMode15withMaximumSizeVSC6CGSize_T_">widgetActiveDisplayModeDidChange(_:withMaximumSize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the active display mode changes.</p>
+
+<p>You should override this method if you need to update your scene when the widget changes it&rsquo;s display mode.</p>
+
+<p>The default implementation of this method is blank.</p>
+
+<ul>
+<li>activeDisplayMode: The new active display mode. See NCWidgetDisplayMode for possible values.</li>
+<li>maxSize: A CGSize object that represents the new maximum size this widget can have.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">widgetActiveDisplayModeDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">activeDisplayMode</span><span class="p">:</span> <span class="kt">NCWidgetDisplayMode</span><span class="p">,</span> <span class="n">withMaximumSize</span> <span class="nv">maxSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame7WGScene20didUpdateWidgetFrameFT2toVSC6CGRect_T_"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateWidgetFrame(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame7WGScene20didUpdateWidgetFrameFT2toVSC6CGRect_T_">didUpdateWidgetFrame(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the widget&rsquo;s frame changes.</p>
+
+<p>You should override this method if you need to update your scene when the widget updates it&rsquo;s frame. This usually happens when the widget is transitioning to a different display mode, or to a new preferred content size.</p>
+
+<p>The default implementation for this method is blank.</p>
+<li><p>frame: A CGRect with the new frame size of the widget.</p></li>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    <p>Matheus Felizola Freires</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">didUpdateWidgetFrame</span><span class="p">(</span><span class="n">to</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC7WidGame7WGScene14widgetDelegateGSqPS_10WGDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/widgetDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC7WidGame7WGScene14widgetDelegateGSqPS_10WGDelegate__">widgetDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows your game scene to change the widget&rsquo;s expandability or maximum height.</p>
+
+<p>Example of how to change the maximum height of your widget:</p>
+
+<p>widgetDelegate.maxHeight = 200</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">widgetDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WGDelegate.html">WGDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame7WGScenecFT4sizeVSC6CGSize10controllerPS_10WGDelegate__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(size:controller:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame7WGScenecFT4sizeVSC6CGSize10controllerPS_10WGDelegate__S0_">init(size:controller:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates your scene object.</p>
+
+<ul>
+<li>size: The size of the scene in points.</li>
+<li>controller: The WGDelegate compliant view controller that is creating the scene.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt"><a href="../Protocols/WGDelegate.html">WGDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly initialized WGScene object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7WidGame7WGScenecFT5coderCSo7NSCoder_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7WidGame7WGScenecFT5coderCSo7NSCoder_GSqS0__">init(coder:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an object initialized from data in a given unarchiver.</p>
+
+<p>You typically return self from init(coder:). If you have an advanced need that requires substituting a different object after decoding, you can do so in awakeAfter(using:).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decoder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An unarchiver object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self, initialized using the data in decoder.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://Felizolinha.github.io" target="_blank" rel="external">Matheus Felizola Freires and Luis Gustavo Avelino de Lima Jacinto</a>. All rights reserved. (Last updated: 2017-07-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
