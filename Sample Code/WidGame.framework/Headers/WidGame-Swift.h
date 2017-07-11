@@ -176,6 +176,13 @@ SWIFT_CLASS("_TtC7WidGame7WGScene")
 ///   </li>
 /// </ul>
 - (void)didUpdateWidgetFrameTo:(CGRect)frame;
+/// Returns an object initialized from data in a given unarchiver.
+/// You typically return self from init(coder:). If you have an advanced need that requires substituting a different object after decoding, you can do so in awakeAfter(using:).
+/// \param decoder An unarchiver object.
+///
+///
+/// returns:
+/// self, initialized using the data in decoder.
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSize:(CGSize)size SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -203,6 +210,21 @@ SWIFT_CLASS("_TtC7WidGame16WGViewController")
 /// Your app never calls this method directly. Instead, this method is called when the system determines that the amount of available memory is low.
 /// You can override this method to release any additional memory used by your view controller. If you do, your implementation of this method must call the super implementation at some point.
 - (void)didReceiveMemoryWarning;
+/// Notifies the container that the size of its view is about to change.
+/// WidGame uses this method to set some widget configurations and creating your game view. It is this method who calls the presentInitialScene() method.
+/// UIKit calls this method before changing the size of a presented view controller’s view. You can override this method in your own objects and use it to perform additional tasks related to the size change. For example, a container view controller might use this method to override the traits of its embedded child view controllers. Use the provided coordinator object to animate any changes you make.
+/// If you override this method in your custom view controllers, always call super at some point in your implementation so that UIKit can forward the size change message appropriately. View controllers forward the size change message to their views and child view controllers. Presentation controllers forward the size change to their presented view controller.
+/// <ul>
+///   <li>
+///     parameters:
+///   </li>
+///   <li>
+///     size: The new size for the container’s view.
+///   </li>
+///   <li>
+///     coordinator: The transition coordinator object managing the size change. You can use this object to animate your changes or get information about the transition that is in progress.
+///   </li>
+/// </ul>
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 /// Override this method to show your first scene and load any saved info.
 /// The default implementation of this method is blank.

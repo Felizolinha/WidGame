@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EE4E0F61F156E1C00DFE3D4 /* WidGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE4E0F51F156E1C00DFE3D4 /* WidGame.framework */; };
+		6EE4E0F71F156E4600DFE3D4 /* WidGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE4E0F51F156E1C00DFE3D4 /* WidGame.framework */; };
+		6EE4E0F81F156E4600DFE3D4 /* WidGame.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE4E0F51F156E1C00DFE3D4 /* WidGame.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E200E4F51F15540B00B831DD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200E4F41F15540B00B831DD /* NotificationCenter.framework */; };
 		E200E4F81F15540B00B831DD /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200E4F71F15540B00B831DD /* TodayViewController.swift */; };
 		E200E4FB1F15540B00B831DD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E200E4F91F15540B00B831DD /* MainInterface.storyboard */; };
 		E200E4FF1F15540B00B831DD /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E200E4F21F15540B00B831DD /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E200E5051F15549700B831DD /* WidGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200E5041F15549700B831DD /* WidGame.framework */; };
-		E200E5061F1554B400B831DD /* WidGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E200E5041F15549700B831DD /* WidGame.framework */; };
-		E200E5071F1554B400B831DD /* WidGame.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E200E5041F15549700B831DD /* WidGame.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E230C8771F15536800851FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230C8761F15536800851FA4 /* AppDelegate.swift */; };
 		E230C8791F15536800851FA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230C8781F15536800851FA4 /* ViewController.swift */; };
 		E230C87C1F15536800851FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E230C87A1F15536800851FA4 /* Main.storyboard */; };
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E200E5071F1554B400B831DD /* WidGame.framework in Embed Frameworks */,
+				6EE4E0F81F156E4600DFE3D4 /* WidGame.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,12 +57,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6EE4E0F51F156E1C00DFE3D4 /* WidGame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WidGame.framework; sourceTree = "<group>"; };
 		E200E4F21F15540B00B831DD /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E200E4F41F15540B00B831DD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		E200E4F71F15540B00B831DD /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		E200E4FA1F15540B00B831DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E200E4FC1F15540B00B831DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E200E5041F15549700B831DD /* WidGame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WidGame.framework; sourceTree = "<group>"; };
 		E230C8731F15536800851FA4 /* Sample Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E230C8761F15536800851FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E230C8781F15536800851FA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E200E4F51F15540B00B831DD /* NotificationCenter.framework in Frameworks */,
-				E200E5051F15549700B831DD /* WidGame.framework in Frameworks */,
+				6EE4E0F61F156E1C00DFE3D4 /* WidGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E200E5061F1554B400B831DD /* WidGame.framework in Frameworks */,
+				6EE4E0F71F156E4600DFE3D4 /* WidGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E200E4F41F15540B00B831DD /* NotificationCenter.framework */,
-				E200E5041F15549700B831DD /* WidGame.framework */,
+				6EE4E0F51F156E1C00DFE3D4 /* WidGame.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,12 +196,12 @@
 				TargetAttributes = {
 					E200E4F11F15540B00B831DD = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3FC5P297B6;
+						DevelopmentTeam = A93689JNSR;
 						ProvisioningStyle = Automatic;
 					};
 					E230C8721F15536800851FA4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3FC5P297B6;
+						DevelopmentTeam = A93689JNSR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -305,7 +305,7 @@
 		E200E5001F15540B00B831DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3FC5P297B6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -322,7 +322,7 @@
 		E200E5011F15540B00B831DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 3FC5P297B6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -436,7 +436,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3FC5P297B6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -454,7 +454,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3FC5P297B6;
+				DEVELOPMENT_TEAM = A93689JNSR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -477,6 +477,7 @@
 				E200E5011F15540B00B831DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E230C86E1F15536800851FA4 /* Build configuration list for PBXProject "Sample Code" */ = {
 			isa = XCConfigurationList;
